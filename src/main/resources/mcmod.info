@@ -1,0 +1,11 @@
+[
+	{
+		"modid": "iv_atmos_pack",
+		"name": "ATMOS SciFi Pack",
+		"description": "SciFi vehicle pack for IV",
+		"version": "0.1.0",
+        "mcversion": "1.12.2",
+        "authorList": ["Gyro Hero", "BlazeWolf1122", "cowboycosmic", "Furanzu", "Laura Darkez", "Turbo Defender", "Vini Damiani"],
+        "logoFile": "icon.png"
+    }
+]
