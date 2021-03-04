@@ -1,0 +1,29 @@
+{
+    "general": {
+        "name": "Subnautica - Fabricator",
+        "description": "The Fabricator is an appliance that can be used to craft Food & Water, Equipment, Tools, and Deployables from Raw Materials, Basic Materials, Advanced Materials, and Electronics.",
+        "type": "interactable_crafting",
+        "customType": "subnautica",
+        "materials" : ["oredict:ingotIron:1", "oredict:ingotGold:1", "minecraft:bone_block:1"],
+        "disableMirroring": true
+    },
+
+    "interactable": {
+        "interactableType": "crafting_table"
+    },
+
+    "generic": {
+        "height": 1,
+        "width": 1
+    },
+
+    "doors": [
+        {
+            "name": "activate_fabricator",
+            "closedPos":[0, 0, 0],
+            "openPos":[0, 0, 0],
+            "width": 0.25, 
+            "height": 0.25
+        }
+    ]
+}
