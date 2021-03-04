@@ -1,0 +1,7 @@
+{
+    "general": {
+        "name": "Subnautica - Battery",
+        "description": "Batteries are electronic items crafted using a Fabricator.\nBatteries are used to craft electronic tools and pieces of equipment, providing them with Energy.",
+        "materials" : ["minecraft:red_mushroom:0:1", "minecraft:red_mushroom:0:1", "oredict:ingotGold:1"]
+    }
+}

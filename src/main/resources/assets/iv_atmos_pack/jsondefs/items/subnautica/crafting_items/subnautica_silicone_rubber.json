@@ -1,0 +1,7 @@
+{
+    "general": {
+        "name": "Subnautica - Silicone Rubber",
+        "description": "Silicone Rubber is a material crafted with a Fabricator.\nIt is mostly used for crafting equipment, such as Fins and Knives, but is also required in some other recipes such as a Power Cell.",
+        "materials" : ["oredict:slimeball:2"]
+    }
+}

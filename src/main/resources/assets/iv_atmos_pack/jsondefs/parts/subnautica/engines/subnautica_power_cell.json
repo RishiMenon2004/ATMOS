@@ -1,0 +1,13 @@
+{
+    "general": {
+        "name": "Subnautica - Power Cell",
+        "type": "generic_subnautica_power_cell",
+        "description": "The Power Cell is an electronics item that can be crafted in the Fabricator. The Power Cell is primarily used to power vehicles.\nA Power Cell stores 200 energy. Vehicles require Power Cells to run. If they are depleted or removed, the vehicle will cease to function.",
+        "materials": ["mts:iv_atmos_pack.subnautica_battery:0:1", "mts:iv_atmos_pack.subnautica_battery:0:1", "mts:iv_atmos_pack.subnautica_silicone_rubber:0:1"]
+    },
+
+    "generic": {
+        "width": 0.450786,
+        "height": 1.07724
+    }
+}
