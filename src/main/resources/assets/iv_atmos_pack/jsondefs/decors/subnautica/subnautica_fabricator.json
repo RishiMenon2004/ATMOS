@@ -1,11 +1,14 @@
 {
     "general" : {
-        "name" : "Subnautica - Fabricator",
+        "name" : "Subnautica - Fabricator (Decor)",
         "descriptions" : "The Fabricator is an appliance that can be used to craft Food & Water, Equipment, Tools, and Deployables from Raw Materials, Basic Materials, Advanced Materials, and Electronics.",
         "materials" : ["oredict:ingotIron:1", "oredict:ingotGold:1", "minecraft:bone_block:1"],
         "width" : 1,
         "height" : 1,
         "depth" : 0.5,
+        //add new items that are craftable
+        //only for subnautica realted items
+        //and only those craftable through a fabricator in the game
         "items": ["iv_atmos_pack:subnautica_battery", "iv_atmos_pack:subnautica_silicone_rubber", "subnautica_power_cell"]
     }
 }
