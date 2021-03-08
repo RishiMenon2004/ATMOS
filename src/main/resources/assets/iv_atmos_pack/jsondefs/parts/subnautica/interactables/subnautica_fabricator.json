@@ -9,21 +9,109 @@
     },
 
     "interactable": {
-        "interactableType": "crafting_table"
+        "interactionType": "crafting_table"
     },
 
     "generic": {
-        "height": 1,
+        "height": 0.5,
         "width": 1
     },
 
     "doors": [
         {
             "name": "activate_fabricator",
-            "closedPos":[0, 0, 0],
-            "openPos":[0, 0, 0],
+            "closedPos": [0.0, 0.125, 0.25],
+            "openPos": [0.0, -0.125, 0.25],
             "width": 0.25, 
             "height": 0.25
         }
-    ]
+    ],
+
+    "rendering": {
+        "animatedObjects": [
+            {
+                "objectName": "Fabrication_Base",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "centerPoint": [0, -0.14919, 0.093615],
+                        "axis": [90, 0, 0],
+                        "duration": 8,
+                        "forwardsDelay": 4,
+                        "reverseDelay": 8,
+                        "variable": "activate_fabricator"
+                    },
+                    {
+                        "animationType": "translation",
+                        "axis": [0, -0.048126, 0],
+                        "duration": 8,
+                        "forwardsDelay": 4,
+                        "reverseDelay": 8,
+                        "variable": "activate_fabricator"
+                    }
+                ]
+            },
+            {
+                "objectName": "Fabricator_Flap_R",
+                "applyAfter": "Fabrication_Base",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "centerPoint": [0.186742, 0.048884, 0.036783],
+                        "axis": [0, -180, 0],
+                        "duration": 8,
+                        "forwardsDelay": 12,
+                        "variable": "activate_fabricator"
+                    }
+                ]
+            },
+            {
+                "objectName": "Fabricator_Flap_L",
+                "applyAfter": "Fabrication_Base",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "centerPoint": [-0.186742, 0.048884, 0.036783],
+                        "axis": [0, 180, 0],
+                        "duration": 8,
+                        "forwardsDelay": 12,
+                        "variable": "activate_fabricator"
+                    }
+                ]
+            },
+            {
+                "objectName": "Fabrication_Laser_Main",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "centerPoint": [0, 0.438603, 0.004268],
+                        "axis": [-90, 0, 0],
+                        "duration": 12,
+                        "reverseDelay": 10,
+                        "variable": "activate_fabricator"
+                    }
+                ]
+            },
+            {
+                "objectName": "Fabrication_Laser_Holder",
+                "applyAfter": "Fabrication_Laser_Main",
+                "animations": []
+            },
+            {
+                "objectName": "Fabrication_Laser",
+                "applyAfter": "Fabrication_Laser_Main",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "centerPoint": [0, 0.252485, 0.044],
+                        "axis": [-50, 0, 0],
+                        "duration": 4,
+                        "forwardsDelay": 10,
+                        "reverseDelay": 6,
+                        "variable": "activate_fabricator"
+                    }
+                ]
+            }
+        ]
+    }
 }
