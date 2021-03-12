@@ -7,8 +7,8 @@
         "height" : 1,
         "depth" : 0.5,
         //add new items that are craftable
-        //only for subnautica realted items
+        //only for subnautica related items
         //and only those craftable through a fabricator in the game
-        "items": ["iv_atmos_pack:subnautica_battery", "iv_atmos_pack:subnautica_silicone_rubber", "subnautica_power_cell"]
+        "items": ["iv_atmos_pack:subnautica_battery", "iv_atmos_pack:subnautica_silicone_rubber", "iv_atmos_pack:subnautica_power_cell"]
     }
 }
