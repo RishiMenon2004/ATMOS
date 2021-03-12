@@ -1,0 +1,125 @@
+{
+    "general": {
+        "name": "Subnautica - Upgrade Fabricator",
+        "description": "The Upgrade Fabricator functions similarly to the upgrade fabricator in the Vehicle Upgrade Console and Scanner Room, allowing the player to craft dedicated Upgrade Modules.",
+        "type": "interactable_crafting",
+        "customType": "subnautica",
+        "materials" : ["oredict:ingotIron:1", "oredict:ingotGold:1", "minecraft:bone_block:1"],
+        "disableMirroring": true
+    },
+  
+    "interactable": {
+        "interactionType": "crafting_bench",
+        "crafting": {
+            //add new items that are craftable
+            //only for subnautica related items
+            //and only those craftable through a fabricator in the game
+            "items": [
+                "iv_atmos_pack:subnautica_battery",
+                "iv_atmos_pack:subnautica_silicone_rubber",
+                "iv_atmos_pack:subnautica_power_cell"
+                ]
+        }
+    },
+  
+    "generic": {
+        "height": 1,
+        "width": 0.5
+    },
+  
+    "doors": [
+        {
+            "name": "activate_fabricator",
+            "closedPos": [0.0, 0.0, 0.25],
+            "openPos": [0.0, -0.25, 0.375],
+            "width": 0.25, 
+            "height": 0.125
+        }
+    ],
+  
+    "rendering": {
+        "animatedObjects": [
+            {
+                "objectName": "Fabrication_Base",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "centerPoint": [0, -0.303585, 0.093615],
+                        "axis": [90, 0, 0],
+                        "duration": 16,
+                        "reverseDelay": 14,
+                        "variable": "activate_fabricator"
+                    },
+                    {
+                        "animationType": "translation",
+                        "axis": [0, -0.029, 0],
+                        "duration": 16,
+                        "reverseDelay": 14,
+                        "variable": "activate_fabricator"
+                    }
+                ]
+            },
+            {
+                "objectName": "Fabricator_Flap_R",
+                "applyAfter": "Fabrication_Base",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "centerPoint": [0.188333, -0.146784, 0.036783],
+                        "axis": [0, -180, 0],
+                        "duration": 14,
+                        "forwardsDelay": 16,
+                        "variable": "activate_fabricator"
+                    }
+                ]
+            },
+            {
+                "objectName": "Fabricator_Flap_L",
+                "applyAfter": "Fabrication_Base",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "centerPoint": [-0.188333, -0.146784, 0.036783],
+                        "axis": [0, 180, 0],
+                        "duration": 14,
+                        "forwardsDelay": 16,
+                        "variable": "activate_fabricator"
+                    }
+                ]
+            },
+            {
+                "objectName": "Fabricator_Laser_Main",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "centerPoint": [0, 0.162482, 0.081967],
+                        "axis": [-90, 0, 0],
+                        "duration": 12,
+                        "forwardsDelay": 8,
+                        "reverseDelay": 12,
+                        "variable": "activate_fabricator"
+                    }
+                ]
+            },
+            {
+                "objectName": "Fabricator_Laser_Main_Pivot",
+                "applyAfter": "Fabricator_Laser_Main",
+                "animations": []
+            },
+            {
+                "objectName": "Fabrication_Laser",
+                "applyAfter": "Fabricator_Laser_Main",
+                "animations": [
+                    {
+                        "animationType": "translation",
+                        "axis": [0, 0, -0.018923],
+                        "duration": 5,
+                        "forwardsDelay": 20,
+                        "reverseDelay": 8,
+                        "variable": "activate_fabricator"
+                    }
+                ]
+            }
+        ]
+    }
+  }
