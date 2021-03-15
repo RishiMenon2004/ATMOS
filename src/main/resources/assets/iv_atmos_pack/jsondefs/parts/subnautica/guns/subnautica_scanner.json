@@ -1,0 +1,108 @@
+{
+    "general": {
+        "name": "Subnautica - Scanner",
+        "type": "gun_hand_subnautica_blank",
+        "description": "The Scanner is a tool capable of scanning fragments, lifeforms, technology, flora, the Player's body, and other objects, which get added to the Databank.",
+        "materials": ["oredict:ingotIron:1", "oredict:nuggetGold:1", "mts:iv_atmos_pack.subnautica_silicone_rubber:0:1", "mts:iv_atmos_pack:subnautica_battery:0:1"]
+    },
+
+    "gun": {
+        "fireDelay": 0,
+        "muzzlePositions": [
+            [0, 0, 0]
+        ],
+        "diameter": 0,
+        "handHeld": true,
+        "handHeldNormalOffset": [0.005, 0, 0.5],
+        "handHeldAimedOffset": [0.005, 0, 0.5]
+    },
+
+    "rendering": {
+        "animatedObjects": [{
+                "objectName": "translucent&GenericLight_A2DDF2_FFFFF_000",
+                "animations": [{
+                    "animationType": "visibility",
+                    "variable": "gun_firing",
+                    "clampMin": 1,
+                    "clampMax": 1,
+                    "forwardsDelay": 8
+                }]
+            },
+            {
+                "objectName": "Scanner&GenericLight_40BBE8_FFFFF_000",
+                "animations": [{
+                    "animationType": "visibility",
+                    "variable": "gun_firing",
+                    "clampMin": 1,
+                    "clampMax": 1,
+                    "forwardsDelay": 8
+                }]
+            },
+            {
+                "objectName": "Screen_Pivot",
+                "animations": [{
+                    "animationType": "rotation",
+                    "variable": "gun_firing",
+                    "centerPoint": [0.068229, 0.284913, -0.029529],
+                    "axis": [0, 90, 0],
+                    "duration": 6,
+                    "reverseDelay": 6
+                }]
+            },
+            {
+                "objectName": "Screen",
+                "applyAfter": "Screen_Pivot",
+                "animations": [{
+                    "animationType": "rotation",
+                    "variable": "gun_firing",
+                    "centerPoint": [0.068229, 0.284913, -0.022869],
+                    "axis": [0, 0, 180],
+                    "duration": 5,
+                    "forwardsDelay": 6,
+                    "reverseDelay": 4
+                }]
+            },
+            {
+                "objectName": "Screen&GenericLight_40BBE8_FFFFF_000",
+                "applyAfter": "Screen",
+                "animations": [{
+                    "animationType": "visibility",
+                    "variable": "gun_firing",
+                    "clampMin": 1,
+                    "clampMax": 1,
+                    "forwardsDelay": 8
+                }]
+            }
+        ],
+        "sounds": [
+            {
+                "name": "iv_atmos_pack:subnautica_scanner_start",
+                "activeAnimations": [{
+                    "animationType": "visibility",
+                    "variable": "gun_windup_complete",
+                    "clampMin": 1.0,
+                    "clampMax": 1.0
+                }]
+            },
+            {
+                "name": "iv_atmos_pack:subnautica_scanner_scanning",
+                "activeAnimations": [{
+                    "animationType": "visibility",
+                    "variable": "gun_firing",
+                    "clampMin": 1.0,
+                    "clampMax": 1.0
+                }],
+                "looping": true
+            },
+            {
+                "name": "iv_atmos_pack:subnautica_scanner_end",
+                "activeAnimations": [{
+                    "animationType": "visibility",
+                    "variable": "gun_cooldown",
+                    "clampMin": 1.0,
+                    "clampMax": 1.0
+                }]
+            }
+        ]
+    }
+}
