@@ -8,6 +8,7 @@
 
     "gun": {
         "fireDelay": 0,
+        "windupTime": 3,
         "muzzlePositions": [
             [0, 0, 0]
         ],
@@ -79,18 +80,20 @@
                 "name": "iv_atmos_pack:subnautica_scanner_start",
                 "activeAnimations": [{
                     "animationType": "visibility",
-                    "variable": "gun_windup_complete",
+                    "variable": "gun_firing",
                     "clampMin": 1.0,
-                    "clampMax": 1.0
+                    "clampMax": 1.0,
+                    "forwardsDelay": 8
                 }]
             },
             {
                 "name": "iv_atmos_pack:subnautica_scanner_scanning",
                 "activeAnimations": [{
                     "animationType": "visibility",
-                    "variable": "gun_firing",
+                    "variable": "gun_windup_complete",
                     "clampMin": 1.0,
-                    "clampMax": 1.0
+                    "clampMax": 1.0,
+                    "forwardsDelay": 8
                 }],
                 "looping": true
             },
@@ -98,9 +101,9 @@
                 "name": "iv_atmos_pack:subnautica_scanner_end",
                 "activeAnimations": [{
                     "animationType": "visibility",
-                    "variable": "gun_cooldown",
-                    "clampMin": 1.0,
-                    "clampMax": 1.0
+                    "variable": "gun_firing",
+                    "clampMin": 0,
+                    "clampMax": 0
                 }]
             }
         ]
