@@ -1,0 +1,136 @@
+{
+    "general": {
+        "name": "Star Wars - Lightsaber: Kylo Ren",
+        "type": "gun_hand_subnautica_blank",
+        "description": "The lightsaber was a distinctive weapon, the very image of which was inextricably bound with the mythos of the Jedi Order and their polar opposites, the Sith.\nThe lightsaber also became synonymous with the Jedi Order's values to uphold peace and justice throughout the galaxy.\nThis perception endured, despite the many conflicts with lightsaber-wielding Sith and Dark Jedi.",
+        "materials": []
+    },
+
+    "gun": {
+        "fireDelay": 0,
+        "windupTime": 1,
+        "muzzlePositions": [[0, 0, 0]],
+        "diameter": 0,
+        "handHeld": true,
+        "handHeldNormalOffset": [0, 0, 0.5],
+        "handHeldAimedOffset": [0, 0, 0.5]
+    },
+
+    "rendering": {
+        "animatedObjects": [
+            {
+                "objectName": "BladeMain&GenericLight_FFFFFF_FFFFF_000",
+                "animations": [
+                    {
+                        "animationType": "scaling",
+                        "variable": "gun_firing",
+                        "centerPoint": [0, 0.25, 0],
+                        "axis": [0, 1, 0],
+                        "duration": 1,
+                        "reverseDelay": 3
+                    },
+                    {
+                        "animationType": "visibility",
+                        "variable": "gun_firing",
+                        "clampMin": 1,
+                        "clampMax": 1,
+                        "reverseDelay": 4
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "tick",
+                        "centerPoint": [0, 0.25, 0],
+                        "axis": [0, 20, 0]
+                    }
+                ]
+            },
+            {
+                "objectName": "BladeLeft&GenericLight_FFFFFF_FFFFF_000",
+                "animations": [
+                    {
+                        "animationType": "scaling",
+                        "variable": "gun_firing",
+                        "centerPoint": [0, 0.25, 0.127516],
+                        "axis": [0, 0, 1],
+                        "duration": 1,
+                        "forwardsDelay": 5
+                    },
+                    {
+                        "animationType": "visibility",
+                        "variable": "gun_firing",
+                        "clampMin": 1,
+                        "clampMax": 1,
+                        "reverseDelay": 1
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "tick",
+                        "centerPoint": [0, 0.25, 0.127516],
+                        "axis": [0, 0, 20]
+                    }
+                ]
+            },
+            {
+                "objectName": "BladeRight&GenericLight_FFFFFF_FFFFF_000",
+                "animations": [
+                    {
+                        "animationType": "scaling",
+                        "variable": "gun_firing",
+                        "centerPoint": [0, 0.25, -0.127516],
+                        "axis": [0, 0, 1],
+                        "duration": 1,
+                        "forwardsDelay": 5
+                    },
+                    {
+                        "animationType": "visibility",
+                        "variable": "gun_firing",
+                        "clampMin": 1,
+                        "clampMax": 1
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "tick",
+                        "centerPoint": [0, 0.25, -0.127516],
+                        "axis": [0, 0, 20]
+                    }
+                ]
+            }
+        ],
+        "sounds": [
+            {
+                "name": "iv_atmos_pack:starwars_lightsaber_kyloren_turnon",
+                "activeAnimations": [
+                    {
+                        "animationType": "visibility",
+                        "variable": "gun_firing",
+                        "clampMin": 1.0,
+                        "clampMax": 1.0
+                    }
+                ]
+            },
+            {
+                "name": "iv_atmos_pack:starwars_lightsaber_kyloren_idle",
+                "activeAnimations": [
+                    {
+                        "animationType": "visibility",
+                        "variable": "gun_windup_complete",
+                        "clampMin": 1.0,
+                        "clampMax": 1.0
+                    }
+                ],
+                "looping": true
+            },
+            {
+                "name": "iv_atmos_pack:starwars_lightsaber_kyloren_turnoff",
+                "activeAnimations": [
+                    {
+                        "animationType": "visibility",
+                        "variable": "gun_firing",
+                        "clampMin": 0,
+                        "clampMax": 0
+                    }
+                ]
+            }
+        ]
+    }
+}
