@@ -1,4 +1,5 @@
 {
+    
     "definitions": [
         {
             "name": "Seamoth",
@@ -939,7 +940,113 @@
                         "duration": 5
                     }
                 ]
-            }
+            },
+			{
+				"objectName": "Yoke_Joint_1",
+				"animations": [
+					{
+						"animationType": "rotation",
+						"variable": "throttle",
+						"centerPoint": [0.0, -0.826501, 1.35227],
+						"axis": [20, 0, 0],
+						"duration": 10
+					},
+					{
+						"animationType": "rotation",
+						"variable": "brake",
+						"centerPoint": [0.0, -0.826501, 1.35227],
+						"axis": [-20, 0, 0],
+						"duration": 10
+					}
+				]
+			},
+			{
+				"objectName": "Yoke_Beam_1",
+				"applyAfter": "Yoke_Joint_1",
+				"animations": []
+			},
+			{
+				"objectName": "Yoke_Joint_2",
+				"applyAfter": "Yoke_Beam_1",
+				"animations": [
+					{
+						"animationType": "rotation",
+						"variable": "throttle",
+						"centerPoint": [0.0, -0.335219, 1.40139],
+						"axis": [-20, 0, 0],
+						"duration": 10
+					},
+					{
+						"animationType": "rotation",
+						"variable": "brake",
+						"centerPoint": [0.0, -0.335219, 1.40139],
+						"axis": [15, 0, 0],
+						"duration": 10
+					}
+				]
+			},
+			{
+				"objectName": "Yoke_Beam_2",
+				"applyAfter": "Yoke_Joint_2",
+				"animations": []
+			},
+			{
+				"objectName": "Yoke_Joint_3",
+				"applyAfter": "Yoke_Beam_2",
+				"animations": [
+					{
+						"animationType": "rotation",
+						"variable": "throttle",
+						"centerPoint": [0.0, 0.105976, 1.14469],
+						"axis": [-15, 0, 0],
+						"duration": 10
+					},
+					{
+						"animationType": "rotation",
+						"variable": "brake",
+						"centerPoint": [0.0, 0.105976, 1.14469],
+						"axis": [-5, 0, 0],
+						"duration": 10
+					}
+				]
+			},
+			{
+				"objectName": "Yoke_Beam_3",
+				"applyAfter": "Yoke_Joint_3",
+				"animations": []
+			},
+			{
+				"objectName": "Yoke_Display_Center",
+				"applyAfter": "Yoke_Beam_3",
+				"animations": [
+					{
+						"animationType": "rotation",
+						"variable": "rudder",
+						"centerPoint": [0.0, 0.175218, 1.0442],
+						"axis": [0, -0.54956, 0.835454]
+					}
+				]
+			},
+			{
+				"objectName": "Yoke_Bottom",
+				"applyAfter": "Yoke_Display_Center",
+				"animations": []
+			},
+			{
+				"objectName": "Yoke_Display_Sides",
+				"applyAfter": "Yoke_Display_Center",
+				"animations": []
+			},
+			{
+				"objectName": "Handle",
+				"applyAfter": "Yoke_Display_Center",
+				"animations": []
+			},
+			{
+				"objectName": "YokeDisplay&GenericLight_70f56a_FFFFF_0100",
+				"applyAfter": "Yoke_Display_Center",
+				"animations": []
+			}
         ]
         
     }
