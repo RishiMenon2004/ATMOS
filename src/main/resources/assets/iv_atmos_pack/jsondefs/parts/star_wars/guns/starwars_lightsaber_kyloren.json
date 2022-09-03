@@ -1,7 +1,7 @@
 {
     "general": {
         "name": "Star Wars - Lightsaber: Kylo Ren",
-        "type": "gun_hand_subnautica_blank",
+        "type": "gun_hand_lightsaber",
         "description": "The lightsaber was a distinctive weapon, the very image of which was inextricably bound with the mythos of the Jedi Order and their polar opposites, the Sith.\nThe lightsaber also became synonymous with the Jedi Order's values to uphold peace and justice throughout the galaxy.\nThis perception endured, despite the many conflicts with lightsaber-wielding Sith and Dark Jedi.",
         "materials": []
     },
